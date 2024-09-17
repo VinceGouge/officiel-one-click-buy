@@ -3,7 +3,6 @@ package ca.ulaval.glo4002.mockexercise;
 import ca.ulaval.glo4002.mockexercise.do_not_edit.Invoice;
 
 public class StartByTestingThis {
-
     public Invoice oneClickBuy(String clientEmail, String productSku) {
         // Étape 1 : Créer le cart avec le CartFactory
         // Étape 2 : Trouver le produit avec le ProductRepository
