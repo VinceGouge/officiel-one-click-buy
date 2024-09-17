@@ -42,5 +42,19 @@ public class CartTest {
 
         assertFalse(cart.getProducts().isEmpty());
     }
-    
+
+    @Test
+    public void givenAnEmptyCart_whenAddingANewProduct_cartContainsTheProduct() {
+
+        cart.addProduct(product);
+
+        assertTrue(cart.getProducts().contains(product));
+    }
+
+    @Test
+    public void givenAnEmptyCart_whenAddingANewProduct_cartContainsOnlyTheProduct() {
+        cart.addProduct(product);
+
+        assertEquals(1, cart.getProducts().size());
+    }
 }
